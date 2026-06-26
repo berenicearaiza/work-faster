@@ -4,7 +4,7 @@ A Pomodoro timer app built with React and TypeScript. Features a custom retro fo
 
 ---
 
-## ✨ Features
+## Features
 
 - **Work & Break Modes** — Toggle between a 25-minute focus session and a 5-minute break with dedicated buttons
 - **Countdown Timer** — Live countdown display with a styled retro font
@@ -14,7 +14,7 @@ A Pomodoro timer app built with React and TypeScript. Features a custom retro fo
 
 ---
 
-## 🖥️ Tech Stack
+## Tech Stack
 
 - [React](https://reactjs.org/) with [TypeScript](https://www.typescriptlang.org/)
 - CSS with custom `@font-face` (Retrograde font)
@@ -23,7 +23,7 @@ A Pomodoro timer app built with React and TypeScript. Features a custom retro fo
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -44,14 +44,14 @@ src/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
 - Node.js (v14+)
 - npm or yarn
 
-## ⏱️ How It Works
+## How It Works
 
 1. **Select a mode** — Click **Work** (25 min) or **Break** (5 min)
 2. **Start the timer** — Hit the start button to begin the countdown
@@ -60,7 +60,7 @@ src/
 
 ---
 
-## 🎨 Customization
+## Customization
 
 - **Timer durations** — Edit `setTimeLeft(25 * 60)` and `setTimeLeft(5 * 60)` in `App.tsx`
 - **Messages** — Update the `cheerMessages` and `breakMessages` arrays
