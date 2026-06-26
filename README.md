@@ -1,46 +1,70 @@
-# Getting Started with Create React App
+# Pomodoro Timer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Pomodoro timer app built with React and TypeScript. Features a custom retro font, animated GIFs, and encouraging messages to keep you focused during work and break sessions.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- **Work & Break Modes** — Toggle between a 25-minute focus session and a 5-minute break with dedicated buttons
+- **Countdown Timer** — Live countdown display with a styled retro font
+- **Rotating Encouragement Messages** — Motivational messages cycle every 4 seconds while the timer runs
+- **Animated Backgrounds** — Background changes from blue (idle) to green (active) to signal your current state
+- **Custom Assets** — Includes custom GIFs, button images, and a hand-picked font for a personal, polished feel
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🖥️ Tech Stack
 
-### `npm test`
+- [React](https://reactjs.org/) with [TypeScript](https://www.typescriptlang.org/)
+- CSS with custom `@font-face` (Retrograde font)
+- `useState` / `useEffect` hooks for timer and message logic
+- Create React App (CRA) scaffold
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📁 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+src/
+├── App.tsx              # Main app component — timer logic, mode switching, UI
+├── App.css              # Styles — layout, animations, custom font
+├── index.tsx            # React entry point
+├── index.css            # Global base styles
+├── assets/
+│   ├── Retrograde.ttf
+│   ├── background-blue.png
+│   ├── background-green.png
+│   ├── idle.gif / work.gif / break.gif
+│   ├── play.png / reset.png
+│   ├── work.png / work-clicked.png
+│   ├── break.png / break-clicked.png
+│   └── close.png
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Getting Started
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Node.js (v14+)
+- npm or yarn
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⏱️ How It Works
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. **Select a mode** — Click **Work** (25 min) or **Break** (5 min)
+2. **Start the timer** — Hit the start button to begin the countdown
+3. **Stay motivated** — Encouraging messages rotate every 4 seconds
+4. **Reset anytime** — Clicking start while the timer is running resets it back to 25 minutes
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## 🎨 Customization
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Timer durations** — Edit `setTimeLeft(25 * 60)` and `setTimeLeft(5 * 60)` in `App.tsx`
+- **Messages** — Update the `cheerMessages` and `breakMessages` arrays
+- **Message interval** — Change the `4000` ms value in the `setInterval` call
+- **Styling** — Swap out assets in the `assets/` folder or update `App.css`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
